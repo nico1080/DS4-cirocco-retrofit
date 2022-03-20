@@ -12,4 +12,4 @@ Many thank to:
 - Cesenate (https://www.drive2.ru/users/cesenate) for the HBA cluster CAN ID from DS5  (ID 0x217 Byte 3, value 0x80)
 
 
-Feel free to use this code and improve it. In return I only ask that you share your improvement (and obviously that you don't sell it)
+Feel free to use this code and improve it. In return I only ask that you share your improvement (and obviously that you don't sell it or try to make money from it)
