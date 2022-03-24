@@ -2,6 +2,8 @@
 
 This sketch will make the AAS (parking sensor) and SAM (blind spot monitoring) toogle key on NAC work (BSI telecoding for AAS is optional)
 
+It use same hardware as arduino CanHacker
+
 It also allow physical button and LED to work again. Check the connection yourself. Beware that LED are in +12v logic.
 
 This skecth was tested on a DS4, and should also work on any C4 gen 2 (hatcback, sedan, etc)
