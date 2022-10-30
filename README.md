@@ -3,6 +3,7 @@
 New updated sketch see Cirocco_retrofit\Cirocco_retrofit_speed_afil.ino:
 
 
+
 The function of this sktech:
 
 - Make AAS (Aide Au Stationement, parking sensor) and SAM (Surveillance Angles Mort, blind spots monitor) NAC toogle switch work
@@ -18,8 +19,10 @@ The function of this sktech:
 - Make AFIL indicator flash when lines are being crossed without turn indicator (see comment)(Thanks to Infizer)
 
 
+  
 
-For speed limit display it follow this logic:
+
+ For speed limit display it follow this logic:
 
 - show end of speedlimit sign for 3s when it is read by CVM
 
