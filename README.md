@@ -1,15 +1,25 @@
 # DS4-cirocco-retrofit
 
 New updated sketch see Cirocco_retrofit\Cirocco_retrofit_speed_afil.ino:
+
+
 The function of this sktech:
+
 Make AAS (Aide Au Stationement, parking sensor) and SAM (Surveillance Angles Mort, blind spots monitor) NAC toogle switch work
+
 Speed limit display from CVM and NAV data (see comment)
+
 Fix SAM light on cirocco (frame 0x321)  (Thanks to Infizer)
+
 Fix animation on cirocco (frame 0x236)  (Thanks to Infizer)
+
 Display green/orange line on cirrocco (AFIL and LKA need to be activated in cirocco) (Thanks to Infizer)
+
 Make AFIL indicator flash when lines are being crossed without turn indicator (see comment)(Thanks to Infizer)
 
+
 For speed limit display it follow this logic:
+
 -show end of speedlimit sign for 3s when it is read by CVM
 -show CVM speed when it is reliable (red sign)
 -keep showing CVM speed in red sign after CVM loose reliability. Only if NAV speed have the same value and has not changed since it lost CVM reliability (CVM reliability is easily lost so I "extend" it)
