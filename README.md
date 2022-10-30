@@ -1,5 +1,31 @@
 # DS4-cirocco-retrofit
 
+New updated sketch see Cirocco_retrofit\Cirocco_retrofit_speed_afil.ino:
+The function of this sktech:
+Make AAS (Aide Au Stationement, parking sensor) and SAM (Surveillance Angles Mort, blind spots monitor) NAC toogle switch work
+Speed limit display from CVM and NAV data (see comment)
+Fix SAM light on cirocco (frame 0x321)  (Thanks to Infizer)
+Fix animation on cirocco (frame 0x236)  (Thanks to Infizer)
+Display green/orange line on cirrocco (AFIL and LKA need to be activated in cirocco) (Thanks to Infizer)
+Make AFIL indicator flash when lines are being crossed without turn indicator (see comment)(Thanks to Infizer)
+
+For speed limit display it follow this logic:
+-show end of speedlimit sign for 3s when it is read by CVM
+-show CVM speed when it is reliable (red sign)
+-keep showing CVM speed in red sign after CVM loose reliability. Only if NAV speed have the same value and has not changed since it lost CVM reliability (CVM reliability is easily lost so I "extend" it)
+-show NAV speed (grey sign)
+-if no nav speed is avilable it display last read sign (grey sign and remove 1km/h. Example last sign=70km/h display 69 in grey sign)
+-If no previous sign (and no nav speed) it display nothing
+
+For AFIL  (Alerte Franchissement Involontaire de Ligne, lign dectection):
+-display green orange line as soon as they are detected at any time (require LKA activated in cirocco)
+-Flash AFIL light when one line become orange and if one(and not 2) turning indicator is ON  and when speed is over 50km/h (require AFIL activated in cirocco)
+-When left/right lines are both detected: margin calculation for AFIL threeshold (large road= big margin small road= small margin) default value is 1300.
+
+
+
+
+
 This sketch will make the AAS (parking sensor) and SAM (blind spot monitoring) toogle key on NAC work (BSI telecoding for AAS is optional)
 
 It use same hardware as arduino CanHacker
