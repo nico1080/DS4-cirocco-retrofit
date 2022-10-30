@@ -35,9 +35,13 @@ For speed limit display it follow this logic:
 
 
 For AFIL  (Alerte Franchissement Involontaire de Ligne, lign dectection):
+
 -display green orange line as soon as they are detected at any time (require LKA activated in cirocco)
+
 -Flash AFIL light when one line become orange and if one(and not 2) turning indicator is ON  and when speed is over 50km/h (require AFIL activated in cirocco)
+
 -When left/right lines are both detected: margin calculation for AFIL threeshold (large road= big margin small road= small margin) default value is 1300.
+
 
 
 
@@ -55,6 +59,7 @@ HBA (High Beam Assist) do not work on DS4/C4 (car ignore CAN message from cluste
 
 
 Many thank to:
+- Infizer for many items  (https://github.com/infizer91/can_extender  , https://www.drive2.ru/users/infizer/ , https://telecoder.ru/index.php )
 - Keryan (https://www.forum-peugeot.com/Forum/members/keryan.126947/) for code insipration
 - Cesenate (https://www.drive2.ru/users/cesenate) for the HBA cluster CAN ID from DS5  (ID 0x217 Byte 3, value 0x80)
 
