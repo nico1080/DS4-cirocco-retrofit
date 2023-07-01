@@ -14,7 +14,7 @@ Many thanks to:
 - Keryan (https://www.forum-peugeot.com/Forum/members/keryan.126947/) for code insipration
 - Cesenate (https://www.drive2.ru/users/cesenate) for the HBA cluster CAN ID from DS5  (ID 0x217 Byte 3, value 0x80)
 - Infizer for many items  (https://github.com/infizer91/can_extender  , https://www.drive2.ru/users/infizer/ , https://telecoder.ru/index.php )
-And all I have forgotten
+- And all I have forgotten
 
 Feel free to use this code and improve it. In return I only ask that you share your improvement (and obviously that you don't sell it)
 
