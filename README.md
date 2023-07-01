@@ -1,6 +1,6 @@
 # DS4-cirocco-retrofit
 
-New updated sketch see Cirocco_retrofit\Cirocco_retrogit_completev1.ino:
+New updated sketch see Cirocco_retrofit\Cirocco_retrofit_completev1.ino:
 
 
 
