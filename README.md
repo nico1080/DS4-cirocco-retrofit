@@ -96,3 +96,7 @@ If I try activating more themes in cirocco/NAC I have weird behaviour: NAC reboo
 
 
 Feel free to use this code and improve it. In return I only ask that you share your improvement (and obviously that you don't sell it or try to make money from it)
+
+
+Detailled schematic:
+![alt text](https://github.com/nico1080/DS4-cirocco-retrofit/blob/main/schematic/breadboard-pinout.jpg)
